@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Sahil's G80 Lab 5 </title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+</head>
+
+<body>
+	<section class="hero is-primary is-bold is-fullheight">
+		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">
+					Ellis Act Evictions - The Temporal Conundrum
+				</h1>
+				<h2 class="subtitle">
+					By Sahil Sanghvi, for UC Berkeley: Geography 80, Lab 5
+				</h2>
+				<iframe width="100%" height="700" frameborder="0" src="https://sssanghvi.carto.com/builder/3fa45189-2358-40bd-b952-dd3632283fcb/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				<br/><br/>
+				<div class="hero-foot">
+					<p style="text-align: center; vertical-align: middle; font-size: 30px; ">
+						&#8675;
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br/><br/>
+	<div class="container is-widescreen writeup-text">
+		<p>
+			<span class='firstChar'>F</span>or this lab, I decided to investigate the Ellis Act Evictions that had occured in between 1997 and 2013. I thought this was an interesting choice because it was during this period that more and more tech companies began to make their way into or nearby the city, bringing along perks from giant campuses that feel more like resorts, to bus shuttles going around the ciy so employees wouldn't even have to drive to work. In particular, there has been quite a bit of talk about how the rise of San Francisco's tech giants has caused the cityto become even harder to live in for the lower-income communities that once lived there. These people are often forced to leave by ever-climbing rent and food prices, but sometimes quite literally when landlords use something called an <strong>Ellis Act Eviction</strong>.
+		</p> 
+		<br/>
+		<div class="box">
+			<p style="font-style: italic;">
+				The “Ellis Act” is a state law which says that landlords have the unconditional right to evict tenants to “go out of business.” For an Ellis eviction, the landlord must remove all of the units in the building from the rental market, i.e., the landlord must evict all the tenants and cannot single out one tenant (for example, with low rent) and/or remove just one unit out of several from the rental market. The Ellis Act is included in the just causes for eviction under the Rent Ordinance as Section 37.9(a)13). <br/>
+
+				Ellis Act evictions generally are used to change the use of the building. Most Ellis evictions are used to convert rental units to condominiums, using loopholes in the condo law.
+				<a href="https://www.sftu.org/ellis/" class="button is-small is-info is-outlined" style="font-style: normal;">
+					Source
+				</a>
+			</p>
+		</div>
+		<br/>
+		<h1 class="title">Design Choices</h1>
+		<p>
+			As we can see, the Ellis Act allows landlords to empty out an entire building - which they are then free to basically do whatever they want with. It's commonly been reported that this has allowed ladlords to knock down low-quality buildings and replace them with nice modern condominiums, <span style="font-style: italic;">especially </span>around the shuttle stops that taxi tech workers to and from silicon valley giants, which have been steadily moving into the city (or at least, that's the impression I've gotten). This is precisely why I wanted to look at this data from a temporal persepctive. There were two factors I had in mind: <br/><br/>
+			<ol>
+				<li>The massive influx of existing tech companies, combined with the rapid growth of bay area startups.</li>
+				<li>The more recent news of tech companies and tech workers gradually beign to move out of the now too-crowded and too-expensive Bay Area.</li>
+			</ol>
+		</p> <br/>
+		<p>
+			I was curious to see how these two factors would play with each other - which one would dominate? In addition, I wanted to see just how apparent it was that these exictions had some correlation (not causation!) with the shuttle stops. In order to accomplish these goals, I made the map above. It shows where the shuttle stops are, gives a hex-chloropleth of the total evictions, and has chronologically animated circles - each representing a single Ellis eviction. It also includes a vertical bar chart that shows an aggregation of the evicitons into year quarters, to accomplish the goal of tracking the amount of evictions over time. 
+		</p>
+		<p>
+			I had to make a couple of important design choices when I was creating this webpage and map: <br/><br/>
+			<ol>
+				<li> The choice to use hexbins as opposed to a normal square grid. The advantages of this are actually quite crucial - they tesselate well while decreasing samplig bias, represent nonlinear patterns in the data much better, and work well for further spatial data analysis. <a href="https://pro.arcgis.com/en/pro-app/tool-reference/spatial-statistics/h-whyhexagons.htm">This page</a> has a pretty well written explanation of all the benefits. </li>
+				<li> Animation. I thought about this for a really long time, but chose to include the animated evictions in order to emphasze just how many of these evictions have happened, so the viewer is more likely to empathize with the displaced tenants. The bubbling effect is eye-catching, and the organic nature of bubbles lends itself to making the reader feel a little more empathetic. </li>
+				<li> The bus stops were made a bright red square so they would contrast easily with the purple and white background and be quickly located. </li>
+			</ol>
+		</p> 
+		<br/>
+		<h1 class="title">So, what did I find?</h1>
+		<p> Well, if we look at the map, there is a strong correlation between the locations of bus stops and those hexbins which had the most total evictions. The only major exception is the 
+		<br/>
+	</div>
+
+	<footer class="footer" style="text-align: center; vertical-align: middle;">
+		This webpage was created by Sahil Sanghvi using <a href="https://bulma.io/">Bulma</a>, <a href="https://carto.com/">Carto</a>, and lots of coffee. 
+		<br/><br/>
+		<a href="http://www.sahilcreates.com">Back to Sahil's main page</a>
+	</footer>
+</body>
+</html>
+
+
+<style type="text/css">
+	.writeup-text {
+		font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+
+	.firstChar {
+		float: left;
+		font-size: 70px;
+		line-height: 40px;
+		padding-top: 8px;
+		padding-right: 8px;
+		padding-left: 3px;
+	}
+
+	ol {
+		padding-left: 25px;
+	}
+</style>
