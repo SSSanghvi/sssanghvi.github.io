@@ -1,5 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.bold_text {
+	font-family: 'Roboto Black', sans-serif;	
+}
+
+.italic-text {
+	font-family: 'Roboto Regular Italic', sans-serif;
+}
+
+html { 
+  background: url(img/landing_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landing_text {
+	text-align: right;
+
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 25p;
+	
+	margin-right: 25px;
+	margin-top: 25px;
+
+	background-color: rgba(255, 255, 255, 0.7);
+	float: right;
+	border-radius: 5px;
 }
