@@ -2,16 +2,11 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
-.bold_text {
-	font-family: 'Roboto Black', sans-serif;	
-}
-
-.italic-text {
-	font-family: 'Roboto Regular Italic', sans-serif;
-}
-
+/* Background image postioning code sourced from csstricks.com */
 html { 
   background: url(img/landing_bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -20,8 +15,8 @@ html {
   background-size: cover;
 }
 
-.landing_text {
-	text-align: right;
+.landing_text_box {
+	width: 25%;
 
 	padding-top: 25px;
 	padding-right: 25px;
@@ -34,4 +29,13 @@ html {
 	background-color: rgba(255, 255, 255, 0.7);
 	float: right;
 	border-radius: 5px;
+}
+
+ol {
+	padding-left: 25px;
+}
+
+li {
+	padding-top: 4px; 
+	padding-bottom: 4px;
 }
