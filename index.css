@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-	font-family: 'Roboto', sans-serif;
+	/*font-family: 'Roboto', sans-serif;*/
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -21,7 +21,7 @@ body {
 .landing_mask {
 	height:100vh;
 	width: 100%;
-	background-color: rgba(30,30,30,0.7); 
+	background-color: rgba(30,30,30,0.75); 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -104,7 +104,7 @@ li {
 
 #name {
 	font-size: 500%;
-	margin-bottom: 24px;
+	margin-bottom: 36px;
 }
 
 #landing_header_section a span {
@@ -157,4 +157,8 @@ li {
   40% {
     transform: rotate(-45deg) translate(0, 0);
   }
+}
+
+#helloworld {
+	margin-bottom: 0px;
 }
