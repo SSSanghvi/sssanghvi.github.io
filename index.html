@@ -11,15 +11,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 </head>
 
-<body >
+<body class="has-navbar-fixed-top">
+	<nav class="navbar is-primary is-transparent is-fixed-top">
+		<div class="navbar-brand">
+			<div class="navbar-item">
+				<a href="index.html"><img src="img/logo_32.png" class="image is-32x32"></a>
+			</div>
+		</div>
+	</nav>
+
 	<section id="landing_header_section">
 		<div class="landing_header">
 			<div class="landing_mask">
 				<div class="container" id="landing_header_text">
 
-					<p class="has-text-success is-family-code title is-4" id="helloworld">
-						print("Hello, World");
-						<span class="blinking-cursor">|</span>
+					<p class="has-text-primary is-family-code title is-4" id="helloworld">
+						print("Hello, World");<span class="blinking-cursor">|</span>
 					</p>
 
 					<h1 class="title is-1 has-text-white" id="name">
@@ -50,8 +57,8 @@
 			<div class="column">
 				<table class="table">
 					<tbody>
-						<tr> <th>School</th><td>University of California, Berkeley</td> </tr>
-						<tr> <th>Major</th><td> Data Science, Geospatial Information & Technology concentration </td> </tr>
+						<tr> <th>School</th><td>University of California, Berkeley; 3rd Year</td> </tr>
+						<tr> <th>Major</th><td> Data Science, Geospatial Information & Technology Concentration </td> </tr>
 						<tr> <th>Minor</th> <td>Electrical Engineering and Computer Science</td> </tr>
 					</tbody>
 				</table>
@@ -59,15 +66,16 @@
 			<div class="column">
 				<table class="table">
 					<tbody>
-						<tr> <th>Current Pos.</th><td>Full-Stack Web Developer at UC Berkeley Information Security Office</td> </tr>
-						<tr> <th>Future Pos.</th><td> Software Engineering Intern at Microsoft (Cloud and AI), Summer 2020</td> </tr>
+						<tr> <th>Current Position</th><td>Full-Stack Web Developer at UC Berkeley Information Security Office</td> </tr>
+						<tr> <th>Future Position</th><td> Software Engineering Intern at Microsoft (Cloud and AI), Summer 2020</td> </tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
-		<h4 class="title is-4">Skills and Languages </h4>
+		<br>
 
-		<nav class="level">
+		<h4 class="title is-4">Languages </h4>
+		<nav class="level is-mobile">
 			<div class="level-item has-text-centered">
 				<div>
 					<p class="heading">Ruby on Rails</p>
@@ -92,46 +100,33 @@
 					<i class="mdi mdi-48px mdi-database"></i>
 				</div>
 			</div>
-		</nav>
-	</section>
-
-
-
-<!-- 	<div class="landing_text_box">
-		<div class="landing_text">
-			<div class="level">
-				<div class="level-left">
-					<h1 class="bold_text title is-1"> 
-						Sahil Sanghvi 
-					</h1>
-				</div>
-				<div class="level-right">
-					<a class="button is-dark" href="https://www.github.com/sssanghvi">
-						<span class="icon">
-							<i class="fab fa-lg fa-github"></i>
-						</span>
-					</a> 
-					&nbsp;
-					<a class="button is-dark" href="https://www.linkedin.com/in/sahil-sanghvi/">
-						<span class="icon is-medium">
-							<i class="fab fa-lg fa-linkedin"></i>
-						</span>
-					</a>
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">HTML & CSS</p>
+					<i class="mdi mdi-48px mdi-language-html5"></i>
 				</div>
 			</div>
-			<p> <span style="font-style: italic"> (noun.) </span> A person who fulfills the following criteria: 
-				<ol> 
-					<li>UC Berkeley Student studying Data Science, Electrical Engineering, and Computer Science.</li>
-					<li> Full Stack Web Developer at UC Berkeley Information Security Office </li>
-					<li> Incoming software engineering intern at Microsoft (Cloud and AI) </li>
-					<li> Graphic Designer specializing in logos and branding </li>
-					<li> Calligrapher and aspiring culinary master </li>
-				</ol>
-			</p>
-		</div>
-		<div class="notification is-danger">
-			This page is still under active development, and is not complete. I encourage you to check out my <a href="http://www.sahilcreates.com"> old (and complete) website </a> while I finish up this one! 
-		</div>
-	</div>
--->
+		</nav>
+
+
+		<h4 class="title is-4">Other Skills</h4>
+		<nav class="level is-mobile">
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Web Mapping</p>
+					<i class="fas fa-2x fa-map-marked-alt"></i>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Graphic Design</p>
+					<i class="fas fa-2x fa-bezier-curve"></i>
+				</div>
+			</div><div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Video Editing</p>
+					<i class="fas fa-2x fa-video"></i>
+				</div>
+			</div>
+	</section>
 </body>
