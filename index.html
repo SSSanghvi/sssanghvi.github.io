@@ -206,162 +206,230 @@
 
 	<section id="projects" class="container is-widescreen">
 		<br>
-		<div class="columns">
-			<div class="column">
-				<h3 class="title is-3">Coding and Technical Projects</h3>
-				<p> Languages are in <span class="tag is-info">blue</span> tags.</p><br>
-				<div class="tile is-ancestor">
-					<div class="tile is-vertical is-parent">
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">UC Berkeley SOCK</p>
-									</div>
+		
+		<h3 class="title is-3">Technical Projects - Coding, Mapping, etc.</h3>
+		<p> Languages are in <span class="tag is-info">blue</span> tags.</p><br>
+		<div class="tile is-ancestor">
+			<div class="tile is-vertical is-parent">
+				<div class="tile is-child box">
+					<nav class="level">
+						<div class="level-left">
+							<div class="level-item">
+								<p class="title">UC Berkeley SOCK</p>
+							</div>
+						</div>
+						<div class="level-right">
+							<div class="level-item">
+								<div class="tags">
+									<span class="tag is-dark">Full-Stack</span>
+									<span class="tag is-dark">Security</span>
+									<span class="tag is-info">Ruby On Rails</span>
+									<span class="tag is-info">PostgreSQL</span>
 								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-											<span class="tag is-dark">Full-Stack</span>
-											<span class="tag is-dark">Security</span>
-											<span class="tag is-info">Ruby On Rails</span>
-											<span class="tag is-info">PostgreSQL</span>
-										</div>
-									</div>
-								</div>
-							</nav>
+							</div>
+						</div>
+					</nav>
 
-							<p>I currently work as a full-stack web developer for the Information Security Office at UC Berkeley. The main product I work on is the university's proprietary Security Operations Center web application, built on Ruby on Rails and PostgreSQL.</p>
-							<p> Notable projects include faster record retrieval for all tabular data, UI theme development and functionality, integration with a new intrusion detection system, and integration with a new assessments tool. </p>
-							<br>
-							<strong>What is a Security Operations Center?</strong>
-							<p style="font-style: italic;"> "The purpose of a Security Operations Center (SOC) is to identify, investigate, prioritize, and resolve issues that could affect the security of an organization’s critical infrastructure and data. A well-developed and well-run SOC can perform real-time threat detection and incident response, with SOC analysts that can deliver rapid security intelligence to stakeholders and senior management, identifying when an attack starts, who is attacking, how the attack is being conducted, and what data or systems are being compromised." 
-								<a href="https://cybersecurity.att.com/solutions/security-operations-center">(source)</a>
-							</p>
+					<p>I currently work as a full-stack web developer for the Information Security Office at UC Berkeley. The main product I work on is the university's proprietary Security Operations Center web application, built on Ruby on Rails and PostgreSQL.</p>
+					<p> Notable projects include faster record retrieval for all tabular data, UI theme development and functionality, integration with a new intrusion detection system, and integration with a new assessments tool. </p>
+					<br>
+					<strong>What is a Security Operations Center?</strong>
+					<p style="font-style: italic;"> "The purpose of a Security Operations Center (SOC) is to identify, investigate, prioritize, and resolve issues that could affect the security of an organization’s critical infrastructure and data. A well-developed and well-run SOC can perform real-time threat detection and incident response, with SOC analysts that can deliver rapid security intelligence to stakeholders and senior management, identifying when an attack starts, who is attacking, how the attack is being conducted, and what data or systems are being compromised." 
+						<a href="https://cybersecurity.att.com/solutions/security-operations-center">(source)</a>
+					</p>
+				</div>
+				<div class="tile is-child box">
+					<nav class="level">
+						<div class="level-left">
+							<div class="level-item">
+								<p class="title">RSA Tool and Password Manager</p>
+							</div>
 						</div>
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">StyleMe</p>
-									</div>
+						<div class="level-right">
+							<div class="level-item">
+								<div class="tags">
+									<span class="tag is-info">Python</span>
+									<span class="tag is-dark">Security</span>
 								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-											<span class="tag is-warning">Award-Winning</span>
-											<span class="tag is-dark">IBM Watson</span>
-											<span class="tag is-info">Python</span>
-										</div>
-									</div>
-								</div>
-							</nav>
-							<p>
-								A Python application that intelligently suggests outfits from the user's wardrobe based on the weather at a user-selected location. Made by myself and Jackie Zhang, in 36 hours, at CalHacks 5.0 - where it was <strong>awarded first place by IBM</strong>.
-							</p>
-							<p>
-								The program uses a custom image classifier built on top of IBM Watson's visual recognition core to categorize images of the user's clothing, making adding new clothes extremely simple. Using wind and temperature data  from the OpenWeatherMap API, StyleMe selects individual clothing items appropriate to wear in the given weather conditions and then pairs together a top, bottom, and optional jacket. 
-							</p>
-							<br>
-							<a href="https://github.com/SSSanghvi/StyleMe">
-								<button class="button is-outlined is-primary">
-									<span class="icon">
-										<i class="fab fa-github"></i>
-									</span>
-									<span>View Project on GitHub</span>
-								</button>
-							</a>
+							</div>
 						</div>
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">RSA Tool and Password Manager</p>
-									</div>
-								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-											<span class="tag is-info">Python</span>
-											<span class="tag is-dark">Security</span>
-										</div>
-									</div>
-								</div>
-							</nav>
-							<p>
-								For my Introductory Computer Science course's final project, I chose to build a RSA tool from scratch using Python. It encrypts and decrypts alphanumeric strings by using their ASCII values, and has a password manager feature where users can store their passwords. The users can even load in their own public and private keys to work with messages encrypted in a different instance of the program. This project was a great learning experience, as it was my first real look at cryptography. I implemented complex modular arithmetic, such as the Extended Euclidean Algorithm. 
-							</p>
-							<br>
-							<a href="https://github.com/SSSanghvi/rsa_tool">
-								<button class="button is-outlined is-primary">
-									<span class="icon">
-										<i class="fab fa-github"></i>
-									</span>
-									<span>View Project on GitHub</span>
-								</button>
-							</a>
-						</div>
-					</div>
+					</nav>
+					<p>
+						For my Introductory Computer Science course's final project, I chose to build a RSA tool from scratch using Python. It encrypts and decrypts alphanumeric strings by using their ASCII values, and has a password manager feature where users can store their passwords. The users can even load in their own public and private keys to work with messages encrypted in a different instance of the program. This project was a great learning experience, as it was my first real look at cryptography. I implemented complex modular arithmetic, such as the Extended Euclidean Algorithm. 
+					</p>
+					<br>
+					<a href="https://github.com/SSSanghvi/rsa_tool">
+						<button class="button is-outlined is-primary">
+							<span class="icon">
+								<i class="fab fa-github"></i>
+							</span>
+							<span>View Project on GitHub</span>
+						</button>
+					</a>
 				</div>
 			</div>
-
-			<div class="column">
-				<h3 class="title is-3">Design Projects and Calligraphy</h3>
-				<div class="tile is-ancestor">
-					<div class="tile is-vertical is-parent">
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">PARAGON Playing Cards</p>
+			<div class="tile is-ancestor">
+				<div class="tile is-vertical is-parent">
+					<div class="tile is-child box">
+						<nav class="level">
+							<div class="level-left">
+								<div class="level-item">
+									<p class="title">StyleMe</p>
+								</div>
+							</div>
+							<div class="level-right">
+								<div class="level-item">
+									<div class="tags">
+										<span class="tag is-warning">Award-Winning</span>
+										<span class="tag is-dark">IBM Watson</span>
+										<span class="tag is-info">Python</span>
 									</div>
 								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-										</div>
+							</div>
+						</nav>
+						<p>
+							A Python application that intelligently suggests outfits from the user's wardrobe based on the weather at a user-selected location. Made by myself and Jackie Zhang, in 36 hours, at CalHacks 5.0 - where it was <strong>awarded first place by IBM</strong>.
+						</p>
+						<p>
+							The program uses a custom image classifier built on top of IBM Watson's visual recognition core to categorize images of the user's clothing, making adding new clothes extremely simple. Using wind and temperature data  from the OpenWeatherMap API, StyleMe selects individual clothing items appropriate to wear in the given weather conditions and then pairs together a top, bottom, and optional jacket. 
+						</p>
+						<br>
+						<a href="https://github.com/SSSanghvi/StyleMe">
+							<button class="button is-outlined is-primary">
+								<span class="icon">
+									<i class="fab fa-github"></i>
+								</span>
+								<span>View Project on GitHub</span>
+							</button>
+						</a>
+					</div>
+					<div class="tile is-child box">
+						<nav class="level">
+							<div class="level-left">
+								<div class="level-item">
+									<p class="title">Food Deserts in LA</p>
+								</div>
+							</div>
+							<div class="level-right">
+								<div class="level-item">
+									<div class="tags">
+										<span class="tag is-dark">Interactive Web Maps</span>
+										<span class="tag is-dark">Data Science - Geospatial</span>
 									</div>
 								</div>
-							</nav>
-							<p></p>
-						</div>
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">Quantum Computing at Berkeley</p>
-									</div>
-								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-											<span class="tag is-dark">Logo Design</span>
-										</div>
-									</div>
-								</div>
-							</nav>
-							<p></p>
-						</div>
-						<div class="tile is-child box">
-							<nav class="level">
-								<div class="level-left">
-									<div class="level-item">
-										<p class="title">NeuroLab</p>
-									</div>
-								</div>
-								<div class="level-right">
-									<div class="level-item">
-										<div class="tags">
-											<span class="tag is-dark">Logo Design</span>
-										</div>
-									</div>
-								</div>
-							</nav>
-							<p></p>
-						</div>
+							</div>
+						</nav>
+						<p>
+							A study of regions known as "Food Deserts" in LA County. These are places with both low income and low access to fresh food, leading to cycles of unealthy consumption and health issues. The final product is a webpage with an article-style writeup coupled with interactive maps. 
+						</p>
+						<br>
+						<a href="https://sssanghvi.github.io/food_deserts_in_la.html">
+							<button class="button is-outlined is-primary">
+								<span>View Project</span>
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-</body>
+
+		<br><br>
+		<h3 class="title is-3">Design Projects and Calligraphy</h3>
+		<div class="tile is-ancestor">
+			<div class="tile is-vertical is-parent">
+				<div class="tile is-child box">
+					<nav class="level">
+						<div class="level-left">
+							<div class="level-item">
+								<p class="title">PARAGON Playing Cards</p>
+							</div>
+						</div>
+						<div class="level-right">
+							<div class="level-item">
+								<div class="tags">
+									<span class="tag is-dark">Print Design</span>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<img src="img/thd.jpg" class="image">
+					<br>
+					<p> 
+						A deck of playing cards designed from scratch, themed around diamonds and featuring geometric art. Featuring muted colors and simple shapes and patterns, these cards are a wonderful accent peice as well as a fully functional 54-card poker regulation deck. Designed and printed in April 2017.
+					</p>
+					<br>
+					<a href="https://www.behance.net/gallery/51047357/PARAGON-Playing-Cards">
+						<button class="button is-outlined is-primary">
+							<span class="icon">
+								<i class="fab fa-behance"></i>
+							</span>
+							<span>View Project on Behance</span>
+						</button>
+					</a>
+				</div>
+				<div class="tile is-child box">
+					<nav class="level">
+						<div class="level-left">
+							<div class="level-item">
+								<p class="title">Neurolab at UC Berkeley</p>
+							</div>
+						</div>
+						<div class="level-right">
+							<div class="level-item">
+								<div class="tags">
+									<span class="tag is-dark">Logo Design</span>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<img src="img/neurolab-display.png" class="image">
+					<br>
+					<p> 
+						I worked with the people over at NeuroLab, a student organization at UC Berkeley,  to create a new logo in March 2018. The logo is analogous to the club's mixed focus between Neurology and Electrical Engineering. In order to illustrate how the club brings these two fields together, I came up with a design where the two lobes of a brain are connected with a capacitor - which can be interpreted as providing power to the mind. ​
+					</p>
+					<br>
+					<a href="https://www.behance.net/gallery/66778611/Neurolab-UCB-Logo">
+						<button class="button is-outlined is-primary">
+							<span class="icon">
+								<i class="fab fa-behance"></i>
+							</span>
+							<span>View Project on Behance</span>
+						</button>
+					</a>
+				</div>
+			</div>
+			<div class="tile is-ancestor">
+				<div class="tile is-vertical is-parent">
+					<div class="tile is-child box">
+						<nav class="level">
+							<div class="level-left">
+								<div class="level-item">
+									<p class="title">Quantum Computing at Berkeley</p>
+								</div>
+							</div>
+							<div class="level-right">
+								<div class="level-item">
+									<div class="tags">
+										<span class="tag is-dark">Logo Design</span>
+									</div>
+								</div>
+							</div>
+						</nav>
+						<img src="img/qcb-logo.png">
+						<br>
+						<p> 
+							For Quantum Computing @ Berkeley, I focused on relatability. The club, a brand new student organization, was trying to build up its member base. In order to help with this, I tried to make the logo simple, so as to not intimidate potential members.  The symbol is an abstract model of a qubit (a part of a quantum computer), and the typeface on the wordmark is meant to remind people of coding. Additionally, the tails on the "q" and "b" resemble the brackets used to create arrays in programming.
+						</p>
+						<a href="https://www.behance.net/gallery/57804795/Quantum-Computing-Berkeley-Logo">
+							<button class="button is-outlined is-primary">
+								<span class="icon">
+									<i class="fab fa-behance"></i>
+								</span>
+								<span>View Project on Behance</span>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
