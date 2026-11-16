@@ -26,6 +26,21 @@
         text-align: center;
 }
 
+project-date {
+        display: block;
+        font-size: 1.5rem;
+        font-style: italic;
+        margin: 1rem 0 1.5rem;
+}
+
+project-date::after {
+        content: "";
+        display: block;
+        width: 55%;
+        border-top: 1px solid #ccc;
+        margin-top: 0.75rem;
+}
+
 .all-caps {
         font-variant: small-caps;
         letter-spacing: 0.2em;
