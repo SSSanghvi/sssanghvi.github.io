@@ -1,1 +1,1 @@
-Hello! Please visit sahilcreates.com to view this website. 
+Hello! Please visit [sahilcreates.com/ml-security-hotspots.html](https://sahilcreates.com/ml-security-hotspots.html) to view the ML Security Hotspots page, or visit [sahilcreates.com](https://sahilcreates.com) to view the full website.

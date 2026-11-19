@@ -41,6 +41,10 @@ project-date::after {
         margin-top: 0.75rem;
 }
 
+.security-hotspots-title {
+        width: 55%;
+}
+
 .all-caps {
         font-variant: small-caps;
         letter-spacing: 0.2em;
